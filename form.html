@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css"/>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="form-page-header">
+        <div>LOGO</div>
+        <div>GET ME OUTTA HERE</div>
+    </div>
+
+    <div class="form-star-commander">
+        <h1>Star Commander Application</h1>
+        <p><em>Do you have what it takes to be a Star Commander for Purple Team?</em></p>
+    </div>
+
+    <form action="" method="get" class="speaker-form"> 
+        <div class="form-row">
+            <div>
+                <label for="full-name">Full Name:</label>
+                <input id="full-name" name="full-name" type="text"/>
+            </div>
+            <div>
+                <label for="starmail">Starmail Address:</label>
+                <input id="starmail" name="starmail" type="email"/>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="species">Species:</label>
+                <select id="species" name="species">
+                  <option value="h">Human</option>
+                  <option value="d">Dracon</option>
+                  <option value="a">Android</option>
+                  <option value="g">Giant Space Fairy</option>
+                  <option value="v">Vulcanian</option>
+                  <option value="c">Centauri</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Years Experience</legend>
+                    <div>
+                        <label for="no-exp" class="radio-label">Butt-For-All</label>
+                        <label for="some-exp" class="radio-label">1-365 Days</label>
+                        <label for="great-exp" class="radio-label">1+ Year</label>
+                    </div>
+                    <div>
+                        <input 
+                            id="no-exp"
+                            name="experience"
+                            type='radio'
+                            value="no-exp" 
+                        />
+                        <input 
+                            id="some-exp"
+                            name="experience"
+                            type='radio'
+                            value="som-exp" 
+                        />
+                        <input 
+                            id="great-exp"
+                            name="experience"
+                            type='radio'
+                            value="great-exp" 
+                        />
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="background">Message:</label>
+            <textarea id="background" name="background"></textarea>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="start-date">Ready Date:</label>
+                <input id="start-date" name="start-date" type="date" min="2023-03-01" max="2023-12-01"/>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Favorite Color</legend>
+                    <div>
+                        <label for="purple-team" class="radio-label">Purple</label>
+                    </div>
+                    <div>
+                        <input 
+                            id="purple-team"
+                            name="experience"
+                            type='radio'
+                            value="purple-team" 
+                        />
+                    </div>
+                </fieldset>   
+            </div>
+        </div>
+
+
+    </form>
+
+    
+</body>
+</html>
