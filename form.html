@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form-style.css"/>
-    <title>Document</title>
+    <title>Star Commander Application</title>
 </head>
 
 <body>
 
-    <div class="form-page-header">
+    <section class="form-page-header">
         <div>LOGO</div>
         <div>GET ME OUTTA HERE</div>
-    </div>
+    </section>
 
-    <div class="form-star-commander">
+    <section class="form-star-commander">
         <h1>Star Commander Application</h1>
         <p><em>Do you have what it takes to be a Star Commander for Purple Team?</em></p>
-    </div>
+    </section>
 
-    <form action="" method="get" class="speaker-form"> 
-        <div class="form-row">
+    <form action="" method="get" class="star-form"> 
+
+        <section class="form-row">
             <div>
                 <label for="full-name">Full Name:</label>
                 <input id="full-name" name="full-name" type="text"/>
@@ -30,9 +31,9 @@
                 <label for="starmail">Starmail Address:</label>
                 <input id="starmail" name="starmail" type="email"/>
             </div>
-        </div>
+        </section>
 
-        <div class="form-row">
+        <section class="form-row">
             <div>
                 <label for="species">Species:</label>
                 <select id="species" name="species">
@@ -49,7 +50,7 @@
                     <legend>Years Experience</legend>
                     <div>
                         <label for="no-exp" class="radio-label">Butt-For-All</label>
-                        <label for="some-exp" class="radio-label">1-365 Days</label>
+                        <label for="some-exp" class="radio-label">1-364 Days</label>
                         <label for="great-exp" class="radio-label">1+ Year</label>
                     </div>
                     <div>
@@ -74,14 +75,14 @@
                     </div>
                 </fieldset>
             </div>
-        </div>
+        </section>
 
-        <div class="form-row">
-            <label for="background">Message:</label>
+        <section class="form-row">
+            <label for="background">Your Background:</label>
             <textarea id="background" name="background"></textarea>
-        </div>
+        </section>
 
-        <div class="form-row">
+        <section class="form-row">
             <div>
                 <label for="start-date">Ready Date:</label>
                 <input id="start-date" name="start-date" type="date" min="2023-03-01" max="2023-12-01"/>
@@ -96,17 +97,19 @@
                         <input 
                             id="purple-team"
                             name="experience"
-                            type='radio'
+                            type="radio"
                             value="purple-team" 
                         />
                     </div>
                 </fieldset>   
             </div>
-        </div>
+        </section>
 
+        <section class="form-row">
+            <button id="submit" type="submit">Submit</button>
+        </section>
 
     </form>
 
-    
 </body>
 </html>
