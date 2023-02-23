@@ -26,7 +26,19 @@ fieldset {
     display: flex;
     align-items: center;
     padding: .5em;
-    width: 50%;
+    width: 100%;
+}
+
+label {
+    margin: 0 4px 0 0;
+}
+
+legend {
+    padding: 4px;
+}
+
+textarea {
+    width: 371px;
 }
 
 .form-page-header {
@@ -49,6 +61,10 @@ fieldset {
     text-align: center;
 }
 
+.radio-field {
+    
+}
+
 .star-form {
     background-color: #F6F7F8;
     border: 1px solid #D6D9DC;
@@ -67,7 +83,14 @@ fieldset {
     border: 1px solid black;
     padding: 10px;
     width: 250px;
+}
 
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 4px;
 }
 
 fieldset > div > input {
