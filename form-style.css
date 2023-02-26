@@ -25,7 +25,7 @@ button {
     width: 125px;
     outline: 1.5px solid white;
     border-radius: 10px;
-    background-image: linear-gradient(225deg, #e06eff, #ff81e6);
+    background-image: linear-gradient(225deg, #d745ff, #ff81e6);
 }
 
 section {
@@ -112,6 +112,7 @@ fieldset > div > input {
     border-radius: 10px;
     
     width: 80%;
+    max-width: 1000px;
     padding: 50px;
 }
 
@@ -145,7 +146,9 @@ input:focus, button:focus, select:focus {
     align-items: center;
     flex-wrap: wrap;
 
-    background-color: #2b083d;
+    background-image: url(testing.jpg);
+    background-size: cover;
+    /*background-color: #2b083d;*/
     border: 1.5px solid rgb(190, 152, 212);
     border-radius: 10px;
     padding: 10px;
@@ -167,7 +170,7 @@ input[type="radio"]:checked {
     }
 } 
 
-/*Favorite Color*/
+/*Favorite Color Picker*/
 
 li {
     width: 100px;
