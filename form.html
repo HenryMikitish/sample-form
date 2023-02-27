@@ -30,19 +30,28 @@
 
         <section class="form-row">
             <div>
-                <label for="full-name">Full Name:</label>
-                <input id="full-name" name="full-name" type="text"/>
+                <div>
+                    <label for="full-name">Full Name</label>
+                    <strong><span aria-label="required">*</span></strong>
+                </div>
+                <input id="full-name" name="full-name" type="text" minlength="3" required/>
             </div>
             <div>
-                <label for="starmail">Starmail Address:</label>
-                <input id="starmail" name="starmail" type="email"/>
+                <div>
+                    <label for="starmail">Starmail Address</label>
+                    <strong><span aria-label="required">*</span></strong>
+                </div>
+                    <input id="starmail" name="starmail" type="email" placeholder="tork@starx.com" required/>
             </div>
         </section>
 
         <section class="form-row">
             <div>
-                <label for="species">Species:</label>
-                <select id="species" name="species">
+                <div>
+                    <label for="species">Species</label>
+                    <strong><span aria-label="required">*</span></strong>
+                </div>
+                <select id="species" name="species" required>
                   <option value="h">Human</option>
                   <option value="d">Dracon</option>
                   <option value="a">Android</option>
@@ -90,16 +99,19 @@
 
         <section class="form-row">
             <div>
-                <label for="start-date">Ready Date:</label>
+                <label for="start-date">Ready Date</label>
                 <input id="start-date" name="start-date" type="date" min="2023-03-01" max="2023-12-01"/>
             </div>
             <div>
                 <fieldset>
-                    <legend>Favorite Color</legend>
+                    <legend>
+                        Favorite Color
+                        <strong><span aria-label="required">*</span></strong>
+                    </legend>
 
                     <ul>
                         <li>
-                          <input type="checkbox" name="fav-color" id="fav-color">
+                          <input type="checkbox" name="fav-color" id="fav-color" required>
                           <label for="fav-color"><span class="on">Purple</span> <span class="off">Not Purple</span></label>
                         </li>
                     </ul>
