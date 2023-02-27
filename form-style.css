@@ -19,6 +19,7 @@ button {
     font-family: "Righteous", "Tilt Neon", 'Courier New', Courier, monospace;
     color: white;
     border: none;
+    cursor: pointer;
 
     font-size: 1.5em;
     height: 50px;
@@ -28,10 +29,11 @@ button {
     background-image: linear-gradient(225deg, #d745ff, #ff81e6);
 }
 
-section {
-    display: flex;
+button:hover {
+    transition: .2s;
+    transform: scale(1.02);
+    background-image: linear-gradient(225deg, #ff81e6, #d745ff);
 }
-
 
 fieldset {
     display: flex;
@@ -39,19 +41,6 @@ fieldset {
     padding: .5em;
     width: 100%;
     border: 0;
-}
-
-label {
-    margin: 0 10px 0 0;
-}
-
-legend {
-    padding: 0 4px 0 4px;
-    font-weight: 700;
-}
-
-textarea {
-    width: 371px;
 }
 
 fieldset > div {
@@ -64,6 +53,27 @@ fieldset > div {
 
 fieldset > div > input {
     height: 1em;
+}
+
+input:focus, button:focus, select:focus {
+    outline-color:#f874ff;;
+}
+
+label {
+    margin: 0 10px 0 0;
+}
+
+legend {
+    padding: 0 4px 0 4px;
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+}
+
+textarea {
+    width: 371px;
 }
 
 .form-page-header {
@@ -79,6 +89,36 @@ fieldset > div > input {
     background-image: linear-gradient(225deg, #2b083d, #58117c);
     border-bottom: 1.5px solid rgb(190, 152, 212);
 }
+
+.form-page-header > div {
+    display: flex;
+    align-items: center;
+}
+
+.form-page-header > div:last-child {
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.form-page-header > div:last-child:hover {
+    background-color: #e06eff;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.form-page-header > div > img {
+    height: 50px;
+}
+
+.form-page-header > div > div {
+    display: flex;
+    font-family: "Righteous", "Tilt Neon", 'Courier New', Courier, monospace;
+}
+
+.form-page-header > div:first-child {
+    gap: 12px;
+}
     
 .form-row {
     display: flex;
@@ -87,6 +127,20 @@ fieldset > div > input {
     
     margin-bottom: 40px;
     gap: 2vw;
+}
+
+.form-row > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-image: url(testing.jpg);
+    background-size: cover;
+    /*background-color: #2b083d;*/
+    border: 1.5px solid rgb(190, 152, 212);
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
 }
 
 .form-row:last-child {
@@ -113,6 +167,7 @@ fieldset > div > input {
     
     width: 80%;
     max-width: 1000px;
+    margin: 30px 0 30px 0;
     padding: 50px;
 }
 
@@ -128,37 +183,14 @@ fieldset > div > input {
     color: transparent;
 }
 
-form.star-form {
-    margin: 30px 0 30px 0;
-}
-
-input:focus, button:focus, select:focus {
-    outline-color:#f874ff;;
-}
-
 .title + div {
     font-size: 1.25em;
     text-align: center;
 }
 
-.form-row > div {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    background-image: url(testing.jpg);
-    background-size: cover;
-    /*background-color: #2b083d;*/
-    border: 1.5px solid rgb(190, 152, 212);
-    border-radius: 10px;
-    padding: 10px;
-    width: 250px;
-}
-
 input[type="radio"]:checked {
     accent-color: #f874ff;
 }
-
 
 @media only screen and (min-width: 500px) {
     form.star-form {
@@ -169,6 +201,8 @@ input[type="radio"]:checked {
         margin: 60px 0 0 0;
     }
 } 
+
+
 
 /*Favorite Color Picker*/
 
